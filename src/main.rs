@@ -23,6 +23,7 @@ mod date_shape;
 
 lazy_static!{
     pub static ref INC: RwLock<Stack<char>> = RwLock::new(Stack::new(10));
+    pub static ref Vect:RwLock<Vec<&str>>=RwLock::new(vec![]);
 }
 fn main() {
     //static mut  S:Stack<char> =Stack::new(10);
